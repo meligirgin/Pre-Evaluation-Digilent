@@ -1,0 +1,903 @@
+
+*** Running vivado
+    with args -log image_filter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source image_filter.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source image_filter.tcl -notrace
+Command: synth_design -top image_filter -part xc7z020clg400-1 -directive sdx_optimization_effort_high -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3928 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 375.711 ; gain = 101.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'image_filter' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Block_proc.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc' (1#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state10 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/AXIvideo2Mat.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (2#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CvtColor' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state8 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:88]
+INFO: [Synth 8-6157] synthesizing module 'image_filter_mul_bkb' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mul_bkb.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_filter_mul_bkb_DSP48_0' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mul_bkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'image_filter_mul_bkb_DSP48_0' (3#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mul_bkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'image_filter_mul_bkb' (4#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mul_bkb.v:14]
+INFO: [Synth 8-6157] synthesizing module 'image_filter_mac_cud' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_cud.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 20 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_filter_mac_cud_DSP48_1' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_cud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_filter_mac_cud_DSP48_1' (5#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_cud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_filter_mac_cud' (6#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_cud.v:34]
+INFO: [Synth 8-6157] synthesizing module 'image_filter_mac_dEe' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_dEe.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 23 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_filter_mac_dEe_DSP48_2' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_dEe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_filter_mac_dEe_DSP48_2' (7#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_dEe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_filter_mac_dEe' (8#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_dEe.v:34]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:638]
+INFO: [Synth 8-6155] done synthesizing module 'CvtColor' (9#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Threshold' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Threshold.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Threshold.v:60]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Threshold.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'Threshold' (10#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Threshold.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Mat2AXIvideo.v:63]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Mat2AXIvideo.v:240]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Mat2AXIvideo.v:266]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Mat2AXIvideo.v:292]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Mat2AXIvideo.v:354]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (11#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w11_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A_shiftReg' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w11_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A_shiftReg' (12#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w11_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A' (13#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w11_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w12_d2_A' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w12_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w12_d2_A_shiftReg' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w12_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w12_d2_A_shiftReg' (14#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w12_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w12_d2_A' (15#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w12_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (16#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (17#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoeOg' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_CvtColoeOg.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoeOg_shiftReg' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_CvtColoeOg.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoeOg_shiftReg' (18#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_CvtColoeOg.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoeOg' (19#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_CvtColoeOg.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_ThreshofYi' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_ThreshofYi.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_ThreshofYi_shiftReg' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_ThreshofYi.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_ThreshofYi_shiftReg' (20#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_ThreshofYi.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_ThreshofYi' (21#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_ThreshofYi.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIg8j' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_Mat2AXIg8j.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIg8j_shiftReg' [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_Mat2AXIg8j.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIg8j_shiftReg' (22#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_Mat2AXIg8j.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIg8j' (23#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/start_for_Mat2AXIg8j.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'image_filter' (24#1) [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter.v:12]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port INPUT_STREAM_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port INPUT_STREAM_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port INPUT_STREAM_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port INPUT_STREAM_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port INPUT_STREAM_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port INPUT_STREAM_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port INPUT_STREAM_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port INPUT_STREAM_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 434.277 ; gain = 160.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 434.277 ; gain = 160.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 434.277 ; gain = 160.547
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter.xdc]
+Finished Parsing XDC File [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 805.117 ; gain = 1.203
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 805.117 ; gain = 531.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 805.117 ; gain = 531.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 805.117 ; gain = 531.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_123_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_135_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond2_fu_168_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_180_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_192_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 805.117 ; gain = 531.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 12    
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               24 Bit    Registers := 8     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 8     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 17    
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 95    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 15    
+	   4 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 110   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Block_proc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 13    
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 26    
+Module CvtColor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module Threshold 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 17    
+Module fifo_w11_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module fifo_w11_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w12_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module fifo_w12_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_CvtColoeOg_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_CvtColoeOg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_ThreshofYi_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_ThreshofYi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Mat2AXIg8j_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Mat2AXIg8j 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "AXIvideo2Mat_U0/" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Threshold_U0/exitcond1_fu_123_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Threshold_U0/exitcond_fu_135_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/exitcond_fu_180_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/exitcond2_fu_168_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/axi_last_V_fu_192_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element CvtColor_U0/r_V_4_i_i_reg_394_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:198]
+WARNING: [Synth 8-6014] Unused sequential element CvtColor_U0/tmp_8_reg_384_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:357]
+WARNING: [Synth 8-6014] Unused sequential element CvtColor_U0/tmp_8_reg_384_pp0_iter2_reg_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:365]
+WARNING: [Synth 8-6014] Unused sequential element CvtColor_U0/tmp_7_reg_379_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:356]
+WARNING: [Synth 8-6014] Unused sequential element CvtColor_U0/tmp_7_reg_379_pp0_iter2_reg_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:364]
+WARNING: [Synth 8-6014] Unused sequential element CvtColor_U0/tmp_9_reg_389_reg was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/CvtColor.v:358]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_dEe.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/image_filter_mac_dEe.v:26]
+DSP Report: Generating DSP CvtColor_U0/r_V_4_i_i_reg_394_reg, operation Mode is: ((A:0x1322d0)*B2)'.
+DSP Report: register CvtColor_U0/tmp_9_reg_389_reg is absorbed into DSP CvtColor_U0/r_V_4_i_i_reg_394_reg.
+DSP Report: register CvtColor_U0/r_V_4_i_i_reg_394_reg is absorbed into DSP CvtColor_U0/r_V_4_i_i_reg_394_reg.
+DSP Report: operator CvtColor_U0/image_filter_mul_bkb_U17/image_filter_mul_bkb_DSP48_0_U/p is absorbed into DSP CvtColor_U0/r_V_4_i_i_reg_394_reg.
+DSP Report: Generating DSP CvtColor_U0/image_filter_mac_cud_U18/image_filter_mac_cud_DSP48_1_U/p, operation Mode is: PCIN+(A:0x74bc6)*B''.
+DSP Report: register B is absorbed into DSP CvtColor_U0/image_filter_mac_cud_U18/image_filter_mac_cud_DSP48_1_U/p.
+DSP Report: register B is absorbed into DSP CvtColor_U0/image_filter_mac_cud_U18/image_filter_mac_cud_DSP48_1_U/p.
+DSP Report: operator CvtColor_U0/image_filter_mac_cud_U18/image_filter_mac_cud_DSP48_1_U/p is absorbed into DSP CvtColor_U0/image_filter_mac_cud_U18/image_filter_mac_cud_DSP48_1_U/p.
+DSP Report: operator CvtColor_U0/image_filter_mac_cud_U18/image_filter_mac_cud_DSP48_1_U/m is absorbed into DSP CvtColor_U0/image_filter_mac_cud_U18/image_filter_mac_cud_DSP48_1_U/p.
+DSP Report: Generating DSP CvtColor_U0/image_filter_mac_dEe_U19/image_filter_mac_dEe_DSP48_2_U/p, operation Mode is: C+(A:0x259168)*B''.
+DSP Report: register B is absorbed into DSP CvtColor_U0/image_filter_mac_dEe_U19/image_filter_mac_dEe_DSP48_2_U/p.
+DSP Report: register B is absorbed into DSP CvtColor_U0/image_filter_mac_dEe_U19/image_filter_mac_dEe_DSP48_2_U/p.
+DSP Report: operator CvtColor_U0/image_filter_mac_dEe_U19/image_filter_mac_dEe_DSP48_2_U/p is absorbed into DSP CvtColor_U0/image_filter_mac_dEe_U19/image_filter_mac_dEe_DSP48_2_U/p.
+DSP Report: operator CvtColor_U0/image_filter_mac_dEe_U19/image_filter_mac_dEe_DSP48_2_U/m is absorbed into DSP CvtColor_U0/image_filter_mac_dEe_U19/image_filter_mac_dEe_DSP48_2_U/p.
+WARNING: [Synth 8-3917] design image_filter has port OUTPUT_STREAM_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter has port OUTPUT_STREAM_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter has port OUTPUT_STREAM_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter has port OUTPUT_STREAM_TSTRB[2] driven by constant 0
+WARNING: [Synth 8-3917] design image_filter has port OUTPUT_STREAM_TSTRB[1] driven by constant 0
+WARNING: [Synth 8-3917] design image_filter has port OUTPUT_STREAM_TSTRB[0] driven by constant 0
+WARNING: [Synth 8-3917] design image_filter has port OUTPUT_STREAM_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design image_filter has port OUTPUT_STREAM_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3331] design image_filter has unconnected port INPUT_STREAM_TKEEP[2]
+WARNING: [Synth 8-3331] design image_filter has unconnected port INPUT_STREAM_TKEEP[1]
+WARNING: [Synth 8-3331] design image_filter has unconnected port INPUT_STREAM_TKEEP[0]
+WARNING: [Synth 8-3331] design image_filter has unconnected port INPUT_STREAM_TSTRB[2]
+WARNING: [Synth 8-3331] design image_filter has unconnected port INPUT_STREAM_TSTRB[1]
+WARNING: [Synth 8-3331] design image_filter has unconnected port INPUT_STREAM_TSTRB[0]
+WARNING: [Synth 8-3331] design image_filter has unconnected port INPUT_STREAM_TID[0]
+WARNING: [Synth 8-3331] design image_filter has unconnected port INPUT_STREAM_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Threshold_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Block_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Block_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CvtColor_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][5]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][8]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][9]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][10]' (FDE) to 'img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][4]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][5]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][7]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][9]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][9]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][10]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][8]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][11]' (FDE) to 'img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXIvideo2Mat_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mat2AXIvideo_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[0]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[0]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[1]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[1]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[2]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[2]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[3]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[3]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[4]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[4]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[5]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[5]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[6]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[6]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[8]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[8]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[9]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[9]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[10]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[10]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[11]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[11]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[12]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[12]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[13]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[13]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[14]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[14]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[15]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[15]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[16]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[16]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[17]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[17]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[18]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[18]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[19]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[19]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[20]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[20]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[21]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[21]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[22]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[23]'
+INFO: [Synth 8-3886] merging instance 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[22]' (FDE) to 'Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[23]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[23] )
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][5]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][8]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][9]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][10]' (FDE) to 'img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\img_0_cols_V_c9_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\img_0_cols_V_c9_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AXIvideo2Mat_U0/cols_V_reg_484_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXIvideo2Mat_U0/cols_V_reg_484_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\img_0_cols_V_c9_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\img_0_cols_V_c9_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\CvtColor_U0/p_src_cols_V_read_reg_351_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CvtColor_U0/p_src_cols_V_read_reg_351_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_done_reg_reg) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/ap_done_reg_reg) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/ap_done_reg_reg) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[28]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[27]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[26]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[25]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[24]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[23]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[22]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[21]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[20]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[19]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[18]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[17]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[16]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[15]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[14]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[13]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[12]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[11]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[10]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[9]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[8]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[7]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[6]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[5]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[4]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[3]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[2]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[1]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_399_reg[0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (Threshold_U0/ap_done_reg_reg) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (Mat2AXIvideo_U0/ap_done_reg_reg) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[23]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[23]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (start_for_CvtColoeOg_U/U_start_for_CvtColoeOg_ram/SRL_SIG_reg[0][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (start_for_CvtColoeOg_U/U_start_for_CvtColoeOg_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (start_for_ThreshofYi_U/U_start_for_ThreshofYi_ram/SRL_SIG_reg[0][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (start_for_ThreshofYi_U/U_start_for_ThreshofYi_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (start_for_Mat2AXIg8j_U/U_start_for_Mat2AXIg8j_ram/SRL_SIG_reg[0][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (start_for_Mat2AXIg8j_U/U_start_for_Mat2AXIg8j_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (img_0_rows_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][8]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (img_0_cols_V_c_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/cols_V_reg_484_reg[10]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/cols_V_reg_484_reg[11]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (img_0_rows_V_c8_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (img_0_cols_V_c9_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][8]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (img_0_cols_V_c9_U/U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/p_src_cols_V_read_reg_351_reg[10]) is unused and will be removed from module image_filter.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/p_src_cols_V_read_reg_351_reg[11]) is unused and will be removed from module image_filter.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 805.117 ; gain = 531.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|image_filter | ((A:0x1322d0)*B2)'   | 21     | 8      | -      | -      | 29     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|image_filter | PCIN+(A:0x74bc6)*B'' | 20     | 9      | -      | -      | 29     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|image_filter | C+(A:0x259168)*B''   | 23     | 9      | 30     | -      | 30     | 0    | 2    | 0    | -    | -     | 0    | 0    | 
++-------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 848.066 ; gain = 574.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 850.793 ; gain = 577.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:01:14 . Memory (MB): peak = 873.168 ; gain = 599.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 873.168 ; gain = 599.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 873.168 ; gain = 599.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 873.168 ; gain = 599.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 873.168 ; gain = 599.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 873.168 ; gain = 599.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 873.168 ; gain = 599.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    24|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     1|
+|5     |LUT1      |    20|
+|6     |LUT2      |    41|
+|7     |LUT3      |   126|
+|8     |LUT4      |    91|
+|9     |LUT5      |   137|
+|10    |LUT6      |    88|
+|11    |FDRE      |   531|
+|12    |FDSE      |    28|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------+------+
+|      |Instance                             |Module                       |Cells |
++------+-------------------------------------+-----------------------------+------+
+|1     |top                                  |                             |  1089|
+|2     |  AXIvideo2Mat_U0                    |AXIvideo2Mat                 |   507|
+|3     |  CvtColor_U0                        |CvtColor                     |   138|
+|4     |    image_filter_mac_cud_U18         |image_filter_mac_cud         |     1|
+|5     |      image_filter_mac_cud_DSP48_1_U |image_filter_mac_cud_DSP48_1 |     1|
+|6     |    image_filter_mac_dEe_U19         |image_filter_mac_dEe         |     6|
+|7     |      image_filter_mac_dEe_DSP48_2_U |image_filter_mac_dEe_DSP48_2 |     6|
+|8     |  Mat2AXIvideo_U0                    |Mat2AXIvideo                 |   153|
+|9     |  Threshold_U0                       |Threshold                    |    92|
+|10    |  img_0_cols_V_c9_U                  |fifo_w12_d2_A                |     8|
+|11    |  img_0_cols_V_c_U                   |fifo_w12_d2_A_0              |     9|
+|12    |  img_0_data_stream_0_U              |fifo_w8_d2_A                 |    32|
+|13    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_9      |    24|
+|14    |  img_0_data_stream_1_U              |fifo_w8_d2_A_1               |    32|
+|15    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_8      |    24|
+|16    |  img_0_data_stream_2_U              |fifo_w8_d2_A_2               |    32|
+|17    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_7      |    24|
+|18    |  img_0_rows_V_c8_U                  |fifo_w11_d2_A                |     8|
+|19    |  img_0_rows_V_c_U                   |fifo_w11_d2_A_3              |     8|
+|20    |  img_1_data_stream_0_U              |fifo_w8_d2_A_4               |    29|
+|21    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_6      |    20|
+|22    |  img_2_data_stream_0_U              |fifo_w8_d2_A_5               |    11|
+|23    |    U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg        |     3|
+|24    |  start_for_CvtColoeOg_U             |start_for_CvtColoeOg         |    11|
+|25    |  start_for_Mat2AXIg8j_U             |start_for_Mat2AXIg8j         |     9|
+|26    |  start_for_ThreshofYi_U             |start_for_ThreshofYi         |    10|
++------+-------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 873.168 ; gain = 599.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 873.168 ; gain = 228.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 873.168 ; gain = 599.438
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+215 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:21 . Memory (MB): peak = 873.168 ; gain = 611.887
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/melik/eclipse-workspace/threshold1/solution1/impl/verilog/project.runs/synth_1/image_filter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file image_filter_utilization_synth.rpt -pb image_filter_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 873.168 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  5 23:49:47 2019...

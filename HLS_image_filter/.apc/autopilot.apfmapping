@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="threshold.hpp" path="C:\Users\melik\eclipse-workspace\threshold\threshold.hpp"/>
+    <originFiles name="threshold.cpp" path="C:\Users\melik\eclipse-workspace\threshold\threshold.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="threshold_tb.cpp" path="C:\Users\melik\eclipse-workspace\threshold1\threshold_tb.cpp"/>
+    <originFiles name="test.bmp" path="C:\Users\melik\eclipse-workspace\threshold1\test.bmp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
